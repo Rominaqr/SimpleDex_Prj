@@ -32,10 +32,11 @@
     "test": "yarn hardhat:test",
     "vercel": "yarn workspace @se-2/nextjs vercel",
     "vercel:yolo": "yarn workspace @se-2/nextjs vercel:yolo",
-    "verify": "yarn workspace @se-2/hardhat verify"
+    "verify": "yarn workspace @se-2/hardhat verify",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "husky": "~8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "~13.2.2"
   },
   "packageManager": "yarn@3.2.3",

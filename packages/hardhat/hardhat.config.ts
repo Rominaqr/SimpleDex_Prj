@@ -40,6 +40,12 @@ const config: HardhatUserConfig = {
       // By default, it will take the first Hardhat account as the deployer
       default: 0,
     },
+    userAccountA: {
+      default: 1, // Aquí puedes definir la dirección a la que deseas asignar los tokens
+    },
+    userAccountB: {
+      default: 2, // Aquí puedes definir la dirección a la que deseas asignar los tokens
+    },
   },
   networks: {
     // View the networks that are pre-configured.
