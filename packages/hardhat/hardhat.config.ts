@@ -115,6 +115,7 @@ const config: HardhatUserConfig = {
     scrollSepolia: {
       url: "https://sepolia-rpc.scroll.io",
       accounts: [deployerPrivateKey],
+      gasPrice: 60000000,
     },
     scroll: {
       url: "https://rpc.scroll.io",

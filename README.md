@@ -1,3 +1,14 @@
+## Creación de contratos ERC20
+- TokenA
+- TokenB
+- SimpleDeX (ownable)
+   - addLiquidity
+   - swapAforB
+   - swapBforA
+   - removeLiquidity
+   - getPrice
+
+
 # 🏗 Scaffold-ETH 2
 
 <h4 align="center">
