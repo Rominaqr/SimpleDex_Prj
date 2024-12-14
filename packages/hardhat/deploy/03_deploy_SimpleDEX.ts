@@ -13,11 +13,11 @@ const deploySimpleDEX: DeployFunction = async function (hre: HardhatRuntimeEnvir
 
   const { deployer } = await hre.getNamedAccounts();
   //const [owner] = await ethers.getSigners();
-  const { deploy,  get } = hre.deployments;
-    // Obtén las direcciones de los tokens desde los artefactos de despliegue
-    const tokenA = await get("TokenA");
-    const tokenB = await get("TokenB");
-     
+  const { deploy, get } = hre.deployments;
+  // Obtén las direcciones de los tokens desde los artefactos de despliegue
+  const tokenA = await get("TokenA");
+  const tokenB = await get("TokenB");
+
   await deploy("SimpleDEX", {
     from: deployer, // , Asegúrate de obtener el desplegador adecuado
     // Contract constructor arguments

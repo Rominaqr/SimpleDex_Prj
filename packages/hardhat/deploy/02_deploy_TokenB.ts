@@ -23,10 +23,10 @@ const deployTokenB: DeployFunction = async function (hre: HardhatRuntimeEnvironm
     autoMine: true,
   });
 
- // Get the deployed contract to interact with it after deploying.
- const TokenB = await hre.ethers.getContract<Contract>("TokenB", deployer);
- console.log("Address Token B:", await TokenB.getAddress()); //dirección token
- console.log("deployer:", deployer); //owner del contrato
+  // Get the deployed contract to interact with it after deploying.
+  const TokenB = await hre.ethers.getContract<Contract>("TokenB", deployer);
+  console.log("Address Token B:", await TokenB.getAddress()); //dirección token
+  console.log("deployer:", deployer); //owner del contrato
 };
 
 export default deployTokenB;
