@@ -8374,7 +8374,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:~8.0.3":
+"husky@npm:^8.0.0":
   version: 8.0.3
   resolution: "husky@npm:8.0.3"
   bin:
@@ -11983,7 +11983,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "se-2@workspace:."
   dependencies:
-    husky: ~8.0.3
+    husky: ^8.0.0
     lint-staged: ~13.2.2
   languageName: unknown
   linkType: soft
