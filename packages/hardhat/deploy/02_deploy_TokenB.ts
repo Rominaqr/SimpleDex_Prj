@@ -9,7 +9,6 @@ import { Contract } from "ethers";
  * @param hre HardhatRuntimeEnvironment object.
  */
 const deployTokenB: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
-
   const { deployer } = await hre.getNamedAccounts();
   const { deploy } = hre.deployments;
 

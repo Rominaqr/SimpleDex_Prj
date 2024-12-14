@@ -10,7 +10,6 @@ import { Contract } from "ethers";
  * @param hre HardhatRuntimeEnvironment object.
  */
 const deploySimpleDEX: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
-
   const { deployer } = await hre.getNamedAccounts();
   //const [owner] = await ethers.getSigners();
   const { deploy, get } = hre.deployments;
