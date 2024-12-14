@@ -10,7 +10,7 @@ import { Contract } from "ethers";
  */
 const deployTokenB: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
-  const { deployer} = await hre.getNamedAccounts();
+  const { deployer } = await hre.getNamedAccounts();
   const { deploy } = hre.deployments;
 
   await deploy("TokenB", {
@@ -25,8 +25,8 @@ const deployTokenB: DeployFunction = async function (hre: HardhatRuntimeEnvironm
 
  // Get the deployed contract to interact with it after deploying.
  const TokenB = await hre.ethers.getContract<Contract>("TokenB", deployer);
- console.log("Address Token B:", await TokenB.getAddress());//dirección token
-  console.log("deployer:", deployer); //owner del contrato
+ console.log("Address Token B:", await TokenB.getAddress()); //dirección token
+ console.log("deployer:", deployer); //owner del contrato
 };
 
 export default deployTokenB;
